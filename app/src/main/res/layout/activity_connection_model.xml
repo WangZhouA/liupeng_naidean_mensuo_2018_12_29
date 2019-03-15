@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_connection_modle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5f9"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.saiyi.naideanlock.ui.ConnectionModelActivity">
+
+    <com.saiyi.naideanlock.topbar.TopToolBar
+        android:id="@+id/model_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_connect_mode_ble"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/connection_wifi_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_wifi" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_connect_mode_ble"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/connection_ble_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/btn_ble" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

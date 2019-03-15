@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wifi_coonect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff"
+    android:orientation="vertical"
+    tools:context="com.saiyi.naideanlock.ui.wificonnect.WifiConnectActivity">
+
+    <com.saiyi.naideanlock.topbar.TopToolBar
+        android:id="@+id/connect_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15"
+        android:background="@color/color_f5f5f9" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_176">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/wifi_lock_iv"
+            android:layout_width="@dimen/size_114"
+            android:layout_height="@dimen/size_114"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_34"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/home_page_bg"
+            app:riv_border_color="@color/color_53cbf3"
+            app:riv_border_width="@dimen/size_4"
+            app:riv_oval="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/wifi_connect"
+        android:textColor="@color/color_0b0b0b"
+        android:textSize="@dimen/word_size_22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/size_20"
+        android:singleLine="true"
+        android:text="@string/choose_wifi"
+        android:textColor="@color/color_737373"
+        android:textSize="@dimen/word_size_16" />
+
+
+    <EditText
+        android:id="@+id/wifi_name_ed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_70"
+        android:background="@drawable/shape_wifi_connect"
+        android:enabled="false"
+        android:focusable="false"
+        android:hint="@string/please_choose_wifi"
+        android:paddingLeft="@dimen/size_15"
+        android:textColorHint="@color/color_a0a0a0" />
+
+
+    <EditText
+        android:id="@+id/wifi_pass_world_ed"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_15"
+        android:background="@drawable/shape_wifi_connect"
+        android:hint="@string/please_enter_wifi_pass"
+        android:paddingLeft="@dimen/size_15"
+        android:textColorHint="@color/color_a0a0a0" />
+
+    <Button
+        android:id="@+id/wifi_connect_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:layout_marginTop="@dimen/size_58"
+        android:text="@string/connect"
+        android:textSize="@dimen/word_size_20"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_verification_code"/>
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saiyi.naideanlock">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <!--android6.0后，扫描蓝牙设备需要定位权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- receive中弹出dialog -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <!-- wifi状态权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 访问有关GSM网络信息权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".ui.LauncherActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <!-- 控制面板 -->
+        <activity
+            android:name=".ui.control.ControlActivity"
+            android:configChanges="orientation|screenSize" />
+        <!-- 用户信息 -->
+        <activity
+            android:name=".ui.information.UserInformationActivity"
+            android:configChanges="orientation|screenSize" />
+        <!-- 设置wifi密码页面 -->
+        <activity
+            android:name=".ui.wificonnect.WifiConnectActivity"
+            android:configChanges="orientation|screenSize" />
+        <!-- 授权管理页面 -->
+        <activity
+            android:name=".ui.AuthorizationActivity"
+            android:configChanges="orientation|screenSize" />
+        <!-- 选择要授权的人页面 -->
+        <activity
+            android:name=".ui.addAdmin.AddAdminActivity"
+            android:configChanges="orientation|screenSize" />
+        <!-- 开锁记录页面 -->
+        <activity
+            android:name=".ui.UnlockingRecordActivity"
+            android:configChanges="orientation|screenSize" />
+        <!-- 设备链接方式 蓝牙链接和wifi链接 -->
+        <activity
+            android:name=".ui.ConnectionModelActivity"
+            android:configChanges="orientation|screenSize" />
+        <!-- 链接wifi进度显示页面 -->
+        <activity
+            android:name=".ui.wifibinding.WifiBindingActivity"
+            android:configChanges="orientation|screenSize" />
+        <!-- 搜索蓝牙 并添加设备页面  -->
+        <activity
+            android:name=".ui.AddDeviceActivity"
+            android:configChanges="orientation|screenSize" />
+        <!-- 相关设置页面 -->
+        <activity
+            android:name=".ui.setting.SettingActivity"
+            android:configChanges="orientation|screenSize" />
+        <!-- 修改开锁密码页面 -->
+        <activity
+            android:name=".ui.ResetPasswordActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <!-- 远程开锁页面 -->
+        <activity
+            android:name=".ui.remote.RemoteActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <service android:name=".service.MyService" />
+        <!--修改电话号码页-->
+        <activity android:name=".ui.PhoneNumberActivity"/>
+
+
+        <activity
+            android:name=".new_ui.basis.NewRegisterActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.basis.NewFindPwdActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.basis.NewLoginActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".new_ui.device.NewSelectUnlockingModeActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewControlActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewPhotoActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewPhotoDetailActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewSettingActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewSetUnlockPwdActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewAddBleDeviceActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewUnlockRecordActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.user.NewUserInfoActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.user.NewUpdateUserInfoActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.user.NewChangeBindPhoneActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.user.NewHelpActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.user.NewAboutActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewAuthManagerActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewAddAuthManagerActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewAuthManagerSettingActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".new_ui.device.NewAuthManagerSettingWeekActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".new_ui.device.NewRemoteUnlockActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".service.Api18Service"/>
+
+
+        <service android:name="object.p2pipcam.nativecaller.BridgeService"/>
+        <activity
+            android:name="object.p2pipcam.nativecaller.ui.RemoteCameraActivity"
+            android:configChanges="locale|keyboard|keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

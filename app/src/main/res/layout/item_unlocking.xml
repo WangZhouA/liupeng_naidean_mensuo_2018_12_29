@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_68">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/record_head_iv"
+        android:layout_width="@dimen/size_45"
+        android:layout_height="@dimen/size_45"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/home_page_bg"
+        app:riv_border_color="@android:color/white"
+        app:riv_border_width="@dimen/size_1"
+        app:riv_oval="true" />
+
+    <TextView
+        android:id="@+id/record_information_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_toRightOf="@+id/record_head_iv"
+        android:text="小李子使用一次密码开锁"
+        android:textSize="@dimen/word_size_15" />
+
+    <ImageView
+        android:id="@+id/record_type_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_toRightOf="@+id/record_information_tv"
+        android:background="@mipmap/fingerprint" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/size_15"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/record_data_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-11-06"
+            android:textColor="@color/color_969696"
+            android:textSize="@dimen/word_size_12" />
+
+        <TextView
+            android:id="@+id/record_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_6"
+            android:text="15:29"
+            android:textColor="@color/color_969696"
+            android:textSize="@dimen/word_size_12" />
+
+    </LinearLayout>
+
+</RelativeLayout>

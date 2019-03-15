@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/swipe_layout_lt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/item_change_name_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_b4b4b3"
+                android:text="@string/change_name"
+                android:textSize="@dimen/word_size_15" />
+
+            <Button
+                android:id="@+id/item_delete_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_ff7b06"
+                android:text="@string/delete"
+                android:textSize="@dimen/word_size_15" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/item_head_iv"
+                android:layout_width="@dimen/size_36"
+                android:layout_height="@dimen/size_36"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/home_page_bg"
+                app:riv_border_color="@android:color/white"
+                app:riv_border_width="@dimen/size_1"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/item_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_15"
+                android:text="@string/authorization_admin"
+                android:textColor="@color/color_23293e"
+                android:textSize="@dimen/word_size_15" />
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+</LinearLayout>

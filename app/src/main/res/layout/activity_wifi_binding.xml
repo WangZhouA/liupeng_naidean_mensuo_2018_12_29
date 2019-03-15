@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_wifi_binding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_ffffff">
+
+    <com.saiyi.naideanlock.topbar.TopToolBar
+        android:id="@+id/binding_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_15"
+        android:layout_below="@+id/binding_top_bar"
+        android:background="@color/color_f5f5f9" />
+
+    <com.czp.library.ArcProgress
+        android:id="@+id/binding_arc_progress_bar"
+        android:layout_width="@dimen/size_140"
+        android:layout_height="@dimen/size_140"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_55"
+        app:arcCapRound="true"
+        app:bgShow="true"
+        app:borderWidth="@dimen/size_5"
+        app:degree="3"
+        app:progressColor="@color/color_ff7b06"
+        app:progressStyle="arc"
+        app:radius="@dimen/size_70"
+        app:unprogresColor="@color/color_00BFFF" />
+
+    <TextView
+        android:id="@+id/wifi_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/binding_arc_progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_28"
+        android:text="@string/wifi_connection"
+        android:textColor="@color/color_2c3747"
+        android:textSize="@dimen/word_size_22" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wifi_connect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_18"
+        android:text="@string/wifi_prompt"
+        android:textColor="@color/color_d3d3d3"
+        android:textSize="@dimen/word_size_18" />
+
+    <Button
+        android:id="@+id/binding_cancel_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/size_40"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:background="@drawable/shape_register_btn"
+        android:text="@string/wifi_cancel"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/word_size_16" />
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pop_device_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_22" />
+
+
+            <TextView
+                android:id="@+id/pop_add_device_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_22"
+                android:drawableLeft="@mipmap/camera"
+                android:drawablePadding="@dimen/size_15"
+                android:gravity="center_vertical"
+                android:text="@string/add_new_device"
+                android:textColor="@color/color_3f424e"
+                android:textSize="@dimen/word_size_18" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

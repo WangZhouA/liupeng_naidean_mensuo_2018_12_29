@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BabyLib/BabyLib.iml" filepath="$PROJECT_DIR$/BabyLib/BabyLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PhotoPicker/PhotoPicker.iml" filepath="$PROJECT_DIR$/PhotoPicker/PhotoPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/itemtouchhelperextension/itemtouchhelperextension.iml" filepath="$PROJECT_DIR$/itemtouchhelperextension/itemtouchhelperextension.iml" />
+      <module fileurl="file://$PROJECT_DIR$/liupeng_naidean_mensuo_2018_12_29.iml" filepath="$PROJECT_DIR$/liupeng_naidean_mensuo_2018_12_29.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/xrecyclerview/xrecyclerview.iml" />
+    </modules>
+  </component>
+</project>

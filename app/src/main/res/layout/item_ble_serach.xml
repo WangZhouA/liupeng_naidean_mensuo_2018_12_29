@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_48"
+    android:background="@color/color_f5f5f9">
+
+
+    <TextView
+        android:id="@+id/item_ble_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/size_15"
+        android:text="sdsdsd"
+        android:textColor="@color/color_484848"
+        android:textSize="@dimen/word_size_15" />
+
+    <TextView
+        android:id="@+id/item_mac_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/item_ble_name"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_toRightOf="@+id/item_ble_name"
+        android:text="sdfasdfsdfsdfsdf"
+        android:textColor="@color/color_737373"
+        android:textSize="@dimen/word_size_10" />
+
+    <Button
+        android:id="@+id/item_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_36"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/size_15"
+        android:background="@mipmap/add_ble"
+        android:padding="@dimen/size_5"
+        android:text="@string/add"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/word_size_20" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_e1e1e1" />
+</RelativeLayout>

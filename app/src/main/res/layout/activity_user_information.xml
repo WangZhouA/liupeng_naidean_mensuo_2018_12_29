@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_information"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f5f5f9"
+    android:orientation="vertical"
+    tools:context="com.saiyi.naideanlock.ui.information.UserInformationActivity">
+
+    <com.saiyi.naideanlock.topbar.TopToolBar
+        android:id="@+id/user_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_97"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/user_head_portrait_iv"
+            android:layout_width="@dimen/size_65"
+            android:layout_height="@dimen/size_65"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/home_page_bg"
+            app:riv_border_color="@android:color/white"
+            app:riv_border_width="1dp"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/user_account_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_10"
+            android:layout_toRightOf="@+id/user_head_portrait_iv"
+            android:singleLine="true"
+            android:text="账号:\t15112345678"
+            android:textColor="@color/color_3c3c3c"
+            android:textSize="@dimen/word_size_16" />
+
+        <TextView
+            android:id="@+id/user_change_avatar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="@dimen/size_10"
+            android:drawableRight="@mipmap/enter"
+            android:gravity="center_vertical"
+            android:text="@string/change_avatar"
+            android:textColor="@color/color_3c3c3c"
+            android:textSize="@dimen/word_size_16" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/color_e1e1e1" />
+
+    <TextView
+        android:id="@+id/user_change_phone_number_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:drawableLeft="@mipmap/change_phone_number"
+        android:drawablePadding="@dimen/size_15"
+        android:drawableRight="@mipmap/enter"
+        android:gravity="center_vertical"
+        android:text="@string/change_phone_number"
+        android:textColor="@color/color_3c3c3c" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/color_e1e1e1" />
+
+    <TextView
+        android:id="@+id/user_update_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:drawableLeft="@mipmap/update"
+        android:drawablePadding="@dimen/size_15"
+        android:drawableRight="@mipmap/enter"
+        android:gravity="center_vertical"
+        android:text="@string/update"
+        android:textColor="@color/color_3c3c3c" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/color_e1e1e1" />
+
+    <TextView
+        android:id="@+id/user_about_us_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:drawableLeft="@mipmap/about_us"
+        android:drawablePadding="@dimen/size_15"
+        android:drawableRight="@mipmap/enter"
+        android:gravity="center_vertical"
+        android:text="@string/about_us"
+        android:textColor="@color/color_3c3c3c" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/color_e1e1e1" />
+
+
+    <TextView
+        android:id="@+id/user_help_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_48"
+        android:layout_marginLeft="@dimen/size_15"
+        android:layout_marginRight="@dimen/size_15"
+        android:drawableLeft="@mipmap/help"
+        android:drawablePadding="@dimen/size_15"
+        android:drawableRight="@mipmap/enter"
+        android:gravity="center_vertical"
+        android:text="@string/help"
+        android:textColor="@color/color_3c3c3c" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:background="@color/color_e1e1e1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/user_quit_bt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_48"
+            android:layout_marginLeft="@dimen/size_15"
+            android:layout_marginRight="@dimen/size_15"
+            android:layout_marginBottom="@dimen/size_20"
+            android:background="@drawable/shape_quit"
+            android:text="@string/quit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/word_size_18"/>
+    </LinearLayout>
+
+</LinearLayout>
